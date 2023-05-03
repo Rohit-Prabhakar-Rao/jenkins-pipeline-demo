@@ -10,7 +10,7 @@ pipeline{
         stage('Deploy'){
             steps{
                 echo "Deploying to stage enviroment for more tests";
-                sh 'echo "hello world'
+                sh 'echo "hello world"'
             }
         }
         
