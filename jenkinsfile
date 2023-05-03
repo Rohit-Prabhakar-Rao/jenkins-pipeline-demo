@@ -4,7 +4,7 @@ pipeline{
         stage('Git-Checkout'){
             steps{
                 echo "checking out from git repo";
-                git 'https://github.com/simplilearn-github/Pipeline_Script.git'
+                git 'https://github.com/Rohit-Prabhakar-Rao/jenkins-pipeline-demo.git'
             }
         }
         stage('Deploy'){
