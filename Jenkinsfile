@@ -4,6 +4,7 @@ pipeline{
         stage('Deploy'){
             steps{
                 echo "Deploying to stage enviroment for more tests";
+                sh 'chmod +x ./show.sh'
                 sh 'bash -c ./show.sh'
             }
         }
