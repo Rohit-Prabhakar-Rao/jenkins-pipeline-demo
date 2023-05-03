@@ -1,0 +1,18 @@
+pipeline{
+    agent any
+    stages{
+        stage('Git-Checkout'){
+            steps{
+                echo "checking out from git repo";
+                git 'https://github.com/simplilearn-github/Pipeline_Script.git'
+            }
+        }
+        stage('Deploy'){
+            steps{
+                echo "Deploying to stage enviroment for more tests";
+                bat 'show.sh'
+            }
+        }
+        
+    }
+}
